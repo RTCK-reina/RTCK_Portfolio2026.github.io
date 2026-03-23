@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 function render(c) {
   // Nav bar
   const nav = document.getElementById('nav-title');
-  if (nav) nav.textContent = `${c.profile.username} PORTFOLIO — ${c.meta.subtitle}`.toUpperCase();
+  if (nav) nav.textContent = `${c.profile.username} PORTFOLIO`.toUpperCase();
 
   // Document title
-  document.title = `${c.profile.username} Portfolio — ${c.meta.subtitle}`;
+  document.title = `${c.profile.username} Portfolio`;
   document.documentElement.lang = c.meta.lang || 'en';
 
   renderCover(c);
