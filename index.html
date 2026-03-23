@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RTCK Portfolio — NAKED Application</title>
+<title>Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -215,12 +215,13 @@ h2.work-title {
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
 }
 </style>
+<script src="renderer.js" defer></script>
 </head>
 <body>
 
 <!-- Controls -->
 <div class="no-print">
-  <span class="title">RTCK PORTFOLIO — NAKED APPLICATION</span>
+  <span class="title" id="nav-title">PORTFOLIO</span>
   <button onclick="window.print()">PRINT / PDF</button>
 </div>
 
@@ -234,352 +235,107 @@ h2.work-title {
   <div style="padding:60mm 16mm 20mm 16mm;position:relative;height:100%;display:flex;flex-direction:column;">
     <!-- Top bar -->
     <div style="position:absolute;top:16mm;left:16mm;right:16mm;display:flex;justify-content:space-between;align-items:center;">
-      <div style="font-size:10px;letter-spacing:4px;color:var(--text-muted);font-family:'Syne',sans-serif;font-weight:700;">PORTFOLIO 2025</div>
+      <div id="cover-year" style="font-size:10px;letter-spacing:4px;color:var(--text-muted);font-family:'Syne',sans-serif;font-weight:700;"></div>
       <div style="width:40px;height:1px;background:linear-gradient(to right,var(--accent),transparent);"></div>
     </div>
 
     <!-- Name -->
     <div style="margin-bottom:12px;">
-      <div style="font-size:11px;letter-spacing:6px;color:var(--accent);font-family:'Syne',sans-serif;font-weight:700;margin-bottom:12px;">RTCK</div>
-      <h1 style="font-size:52px;font-weight:800;letter-spacing:-1px;line-height:1.05;font-family:'Syne',sans-serif;color:var(--text);">KAZUKI<br>TANAKA</h1>
+      <div id="cover-username" style="font-size:11px;letter-spacing:6px;color:var(--accent);font-family:'Syne',sans-serif;font-weight:700;margin-bottom:12px;"></div>
+      <h1 id="cover-name" style="font-size:52px;font-weight:800;letter-spacing:-1px;line-height:1.05;font-family:'Syne',sans-serif;color:var(--text);"></h1>
     </div>
 
     <!-- Title -->
-    <div style="font-size:15px;color:var(--text-muted);letter-spacing:2px;font-family:'Syne',sans-serif;font-weight:500;margin-bottom:40px;padding-left:2px;">3DCG・AI Creator</div>
+    <div id="cover-title" style="font-size:15px;color:var(--text-muted);letter-spacing:2px;font-family:'Syne',sans-serif;font-weight:500;margin-bottom:40px;padding-left:2px;"></div>
 
     <!-- Divider -->
     <div style="width:60px;height:2px;background:var(--accent);margin-bottom:40px;"></div>
 
     <!-- Philosophy -->
-    <div style="font-size:14px;line-height:2;color:var(--text-muted);max-width:420px;margin-bottom:auto;">
-      「人の記憶に爪痕を残す」<br>
-      <span style="font-size:12px;line-height:1.8;">
-        すべての制作の目的は、技術的達成ではなく、<br>
-        その場にいた人の記憶に残る体験を作ること。
-      </span>
-    </div>
+    <div id="cover-philosophy" style="font-size:14px;line-height:2;color:var(--text-muted);max-width:420px;margin-bottom:auto;"></div>
 
     <!-- Contact -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:400px;padding-top:30px;border-top:1px solid var(--border);">
-      <div>
-        <div style="font-size:9px;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;font-family:'Syne',sans-serif;margin-bottom:3px;">portfolio</div>
-        <div style="font-size:11px;color:var(--text);">rtck-reina.com</div>
-      </div>
-      <div>
-        <div style="font-size:9px;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;font-family:'Syne',sans-serif;margin-bottom:3px;">github</div>
-        <div style="font-size:11px;color:var(--text);">github.com/RTCK-reina</div>
-      </div>
-      <div>
-        <div style="font-size:9px;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;font-family:'Syne',sans-serif;margin-bottom:3px;">booth</div>
-        <div style="font-size:11px;color:var(--text);">reinac.booth.pm</div>
-      </div>
-      <div>
-        <div style="font-size:9px;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;font-family:'Syne',sans-serif;margin-bottom:3px;">email</div>
-        <div style="font-size:11px;color:var(--text);">rtck2018@gmail.com</div>
-      </div>
-      <div>
-        <div style="font-size:9px;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;font-family:'Syne',sans-serif;margin-bottom:3px;">note</div>
-        <div style="font-size:11px;color:var(--text);">note.com/rtck_photos</div>
-      </div>
-    </div>
+    <div id="cover-contacts" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:400px;padding-top:30px;border-top:1px solid var(--border);"></div>
   </div>
 </div>
 
-<!-- ==================== PAGE 2: LIGHT OCEAN ==================== -->
-<div class="page" style="padding:16mm;">
-  <div class="section-label">WORK — 2022</div>
-  <h2 class="work-title">light ocean RealTimeLight</h2>
-  <div class="work-subtitle">VRChat World — Immersive Light Installation</div>
-  <div style="height:24px;"></div>
-  <div class="divider"></div>
+<!-- ==================== WORKS (dynamically generated) ==================== -->
+<div id="works-container"></div>
 
-  <div class="work-image">
-    <img src="light_ocean.png" alt="light ocean">
-  </div>
-
-  <p class="work-desc">水面に無数の発光体が浮遊する没入型ビジュアルパフォーマンス空間。リアルタイムライティングとGPUインスタンシングを組み合わせ、視覚的な豊かさとパフォーマンスを両立。2バージョン合算で1,950名以上が来訪し、お気に入り登録101件を超える。</p>
-
-  <div style="margin-bottom:20px;">
-    <span class="metric">1,950+ Visits</span>
-    <span class="metric">101 Favorites</span>
-    <span class="metric">2 Versions</span>
-  </div>
-
-  <div class="card" style="margin-bottom:20px;">
-    <div class="card-label">KEY POINTS</div>
-    <div class="keypoint"><span class="keypoint-num">01</span>リアルタイムライト内包の発光体を水平線まで無数に配置</div>
-    <div class="keypoint"><span class="keypoint-num">02</span>GPUインスタンシングによる描画負荷の最適化</div>
-    <div class="keypoint"><span class="keypoint-num">03</span>Vegetation Systemを応用したランダム配置の実装</div>
-    <div class="keypoint"><span class="keypoint-num">04</span>シェーダーによる海面の反射・屈折表現</div>
-  </div>
-
-  <div class="tech-label">TECH STACK</div>
-  <div>
-    <span class="tag">Unity</span>
-    <span class="tag">ShaderLab/HLSL</span>
-    <span class="tag">GPU Instancing</span>
-    <span class="tag">VRChat SDK</span>
-  </div>
-
-  <div style="margin-top:16px;font-size:11px;color:var(--accent);">→ vrchat.com/home/world/wrld_345e77a0-a9fe-422c-b41a-fd1dbf90d2b0</div>
-  <div class="page-num">02</div>
-</div>
-
-<!-- ==================== PAGE 3: GLSL VJ ==================== -->
-<div class="page" style="padding:16mm;">
-  <div class="section-label">WORK — 2025</div>
-  <h2 class="work-title">GLSL Multi Layer VJ</h2>
-  <div class="work-subtitle">Real-time Visual Performance Tool</div>
-  <div style="height:24px;"></div>
-  <div class="divider"></div>
-
-  <div class="work-image">
-    <img src="glsl_vj.png" alt="GLSL VJ">
-  </div>
-
-  <p class="work-desc">ライブコーディング対応のマルチレイヤーGLSLビジュアルパフォーマンスツール。オーディオリアクティブ機能、MIDIコントローラー対応、Monaco Editor内蔵のシェーダーエディタを搭載。単一HTMLファイルからモジュール構成へ発展。</p>
-
-  <div style="margin-bottom:20px;">
-    <span class="metric">10+ Built-in Shaders</span>
-    <span class="metric">V0→V0.5 Alpha</span>
-  </div>
-
-  <div class="card" style="margin-bottom:20px;">
-    <div class="card-label">KEY POINTS</div>
-    <div class="keypoint"><span class="keypoint-num">01</span>マルチレイヤー合成によるリアルタイムビジュアル生成</div>
-    <div class="keypoint"><span class="keypoint-num">02</span>Web Audio APIによるオーディオリアクティブ連動</div>
-    <div class="keypoint"><span class="keypoint-num">03</span>MIDIコントローラーによるライブパフォーマンス操作</div>
-    <div class="keypoint"><span class="keypoint-num">04</span>AI協調開発（Claude）によるラピッドプロトタイピング</div>
-  </div>
-
-  <div class="tech-label">TECH STACK</div>
-  <div>
-    <span class="tag">WebGL/GLSL</span>
-    <span class="tag">Web Audio API</span>
-    <span class="tag">WebMIDI</span>
-    <span class="tag">Monaco Editor</span>
-    <span class="tag">JavaScript</span>
-  </div>
-  <div class="page-num">03</div>
-</div>
-
-<!-- ==================== PAGE 4: INTERVIEW AI ==================== -->
-<div class="page" style="padding:16mm;">
-  <div class="section-label">WORK — 2025</div>
-  <h2 class="work-title">SE Interview AI</h2>
-  <div class="work-subtitle">AI-Powered Mock Interview Training System</div>
-  <div style="height:24px;"></div>
-  <div class="divider"></div>
-
-  <div class="work-image">
-    <img src="interview_ai.png" alt="Interview AI">
-  </div>
-
-  <p class="work-desc">Claude APIを活用した対話型面接トレーニングアプリケーション。音声認識（STT）・音声合成（TTS）・リアルタイムストレス分析を搭載し、複数の面接モード（標準/論理破壊/採用否定型）を実装。Claude-in-Claude アーキテクチャによりArtifact内でAPIコールを実行。</p>
-
-  <div style="margin-bottom:20px;">
-    <span class="metric">V4→V8 Iterations</span>
-    <span class="metric">3 Interview Modes</span>
-  </div>
-
-  <div class="card" style="margin-bottom:20px;">
-    <div class="card-label">KEY POINTS</div>
-    <div class="keypoint"><span class="keypoint-num">01</span>Artifact内からClaude APIを直接呼び出すアーキテクチャ設計</div>
-    <div class="keypoint"><span class="keypoint-num">02</span>リアルタイムストレスメーター・フィードバックトレーナー</div>
-    <div class="keypoint"><span class="keypoint-num">03</span>モデル切替UI（Haiku/Sonnet/Opus対応）</div>
-    <div class="keypoint"><span class="keypoint-num">04</span>Free-tier向けLite版の派生開発</div>
-  </div>
-
-  <div class="tech-label">TECH STACK</div>
-  <div>
-    <span class="tag">Claude API</span>
-    <span class="tag">React/JSX</span>
-    <span class="tag">Web Speech API (STT/TTS)</span>
-    <span class="tag">Claude-in-Claude Architecture</span>
-  </div>
-  <div class="page-num">04</div>
-</div>
-
-<!-- ==================== PAGE 5: 3D PRODUCTS ==================== -->
-<div class="page" style="padding:16mm;">
-  <div class="section-label">WORK — 2020—</div>
-  <h2 class="work-title">3D Products & Prototyping</h2>
-  <div class="work-subtitle">BOOTH Distribution / Generative Design / Reverse Modeling</div>
-  <div style="height:24px;"></div>
-  <div class="divider"></div>
-
-  <!-- Product grid -->
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px;">
-    <!-- Basestation -->
-    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:16px;">
-      <div style="width:100%;height:100px;background:linear-gradient(135deg,#18181b,#1f1f23);border-radius:3px;overflow:hidden;margin-bottom:12px;">
-        <img src="V3.jpg" alt="Basestation Mount" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px;font-family:'Syne',sans-serif;">Basestation 2.0 Mount（-35°）</div>
-      <div style="font-size:11px;line-height:1.7;color:var(--text-muted);">ジェネレーティブデザインを用いたVRトラッキング最適化マウント。V0→V4の反復プロトタイピングで剛性・取付性・軽量化を段階的に改善。</div>
-    </div>
-    <!-- Camera -->
-    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:16px;">
-      <div style="width:100%;height:100px;background:linear-gradient(135deg,#18181b,#1f1f23);border-radius:3px;overflow:hidden;margin-bottom:12px;">
-        <img src="compact_camera.png" alt="Compact Camera" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px;font-family:'Syne',sans-serif;">コンパクトカメラ（VirtualLens2対応）</div>
-      <div style="font-size:11px;line-height:1.7;color:var(--text-muted);">VRChat向け3Dプリント想定アクセサリー。VirtualLens2対応の撮影用プロップ。</div>
-    </div>
-    <!-- Transceiver -->
-    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:16px;">
-      <div style="width:100%;height:100px;background:linear-gradient(135deg,#18181b,#1f1f23);border-radius:3px;overflow:hidden;margin-bottom:12px;">
-        <img src="transceiver.png" alt="Transceiver" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
-      <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px;font-family:'Syne',sans-serif;">トランシーバー</div>
-      <div style="font-size:11px;line-height:1.7;color:var(--text-muted);">VRChat向けアクセサリー。2022年リリース。</div>
-    </div>
-  </div>
-
-  <!-- Reverse Modeling -->
-  <div class="card" style="margin-bottom:20px;">
-    <div class="card-label">REVERSE MODELING — 30+ COMMERCIAL PROJECTS</div>
-    <p style="font-size:12px;line-height:1.8;color:var(--text-muted);margin:0;">Autodesk Fusionを用いたリバースモデリングの有償案件を30件以上受注・納品。ナイフ等プロダクトのモックアップ制作を中心に、実物計測から正確な3Dデータへの再現と、クライアントとの要件調整を繰り返す中で、実務レベルの納品精度と納期管理を習得。</p>
-  </div>
-
-  <!-- Prototype iterations -->
-  <div class="tech-label" style="margin-bottom:12px;">ITERATIVE PROTOTYPING — BASESTATION MOUNT</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;">
-    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:3px;padding:10px;text-align:center;">
-      <div style="width:100%;aspect-ratio:1/1;background:#18181b;border-radius:2px;overflow:hidden;margin-bottom:8px;">
-        <img src="V0.jpg" alt="V0" style="width:100%;height:100%;object-fit:contain;display:block;background:#18181b;">
-      </div>
-      <div style="font-size:9px;color:var(--text-muted);line-height:1.4;">V0 — 力学的最適解</div>
-    </div>
-    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:3px;padding:10px;text-align:center;">
-      <div style="width:100%;aspect-ratio:1/1;background:#18181b;border-radius:2px;overflow:hidden;margin-bottom:8px;">
-        <img src="V1.jpg" alt="V1+" style="width:100%;height:100%;object-fit:contain;display:block;background:#18181b;">
-      </div>
-      <div style="font-size:9px;color:var(--text-muted);line-height:1.4;">V1+ — 取付性改善</div>
-    </div>
-    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:3px;padding:10px;text-align:center;">
-      <div style="width:100%;aspect-ratio:1/1;background:#18181b;border-radius:2px;overflow:hidden;margin-bottom:8px;">
-        <img src="V2.jpg" alt="V2" style="width:100%;height:100%;object-fit:contain;display:block;background:#18181b;">
-      </div>
-      <div style="font-size:9px;color:var(--text-muted);line-height:1.4;">V2 — 高剛性確保</div>
-    </div>
-    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:3px;padding:10px;text-align:center;">
-      <div style="width:100%;aspect-ratio:1/1;background:#18181b;border-radius:2px;overflow:hidden;margin-bottom:8px;">
-        <img src="V3.jpg" alt="V3" style="width:100%;height:100%;object-fit:contain;display:block;background:#18181b;">
-      </div>
-      <div style="font-size:9px;color:var(--text-muted);line-height:1.4;">V3 — Gen. Design</div>
-    </div>
-  </div>
-
-  <div style="margin-top:16px;">
-    <div class="tech-label">DISTRIBUTION</div>
-    <div>
-      <span class="tag">BOOTH</span>
-      <span class="tag">Sketchfab</span>
-      <span class="tag">note</span>
-      <span class="tag">Autodesk Fusion</span>
-      <span class="tag">3D Printing (FDM)</span>
-      <span class="tag">UltiMaker Cura</span>
-    </div>
-  </div>
-  <div class="page-num">05</div>
-</div>
-
-<!-- ==================== PAGE 6: SKILLS ==================== -->
+<!-- ==================== PAGE: SKILLS ==================== -->
 <div class="page" style="padding:16mm;">
   <div class="section-label">SKILL SET</div>
   <h2 class="work-title">Skills & Tools</h2>
   <div style="height:30px;"></div>
 
   <!-- Skills grid -->
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px;">
-    <!-- Modeling -->
-    <div class="card">
-      <div class="card-label">MODELING</div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span style="font-size:12px;color:var(--text);">Autodesk Fusion</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2020.11~</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;">
-        <span style="font-size:12px;color:var(--text);">Blender</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2021.05~</span>
-      </div>
-    </div>
-    <!-- Development -->
-    <div class="card">
-      <div class="card-label">DEVELOPMENT</div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span style="font-size:12px;color:var(--text);">Unity</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2021~</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span style="font-size:12px;color:var(--text);">JavaScript / React</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2025~</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span style="font-size:12px;color:var(--text);">GLSL / ShaderLab</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2021~</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span style="font-size:12px;color:var(--text);">Claude API</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2025~</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;">
-        <span style="font-size:12px;color:var(--text);">Python</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2025~</span>
-      </div>
-    </div>
-    <!-- Design -->
-    <div class="card">
-      <div class="card-label">DESIGN</div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span style="font-size:12px;color:var(--text);">Adobe CC</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2020.04~</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;">
-        <span style="font-size:12px;color:var(--text);">Affinity Suite</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2022.05~</span>
-      </div>
-    </div>
-    <!-- Other -->
-    <div class="card">
-      <div class="card-label">OTHER</div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
-        <span style="font-size:12px;color:var(--text);">Git / GitHub</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2025~</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;">
-        <span style="font-size:12px;color:var(--text);">3D Printing (FDM)</span>
-        <span style="font-size:10px;color:var(--text-muted);font-family:'Syne',sans-serif;">2024~</span>
-      </div>
-    </div>
-  </div>
+  <div id="skills-container" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px;"></div>
 
   <!-- Education -->
-  <div class="card" style="margin-bottom:36px;">
-    <div class="card-label">EDUCATION</div>
-    <div style="font-size:13px;color:var(--text);margin-bottom:4px;">愛知産業大学 造形学部 建築学科</div>
-    <div style="font-size:11px;color:var(--text-muted);">2023.04 — 2027.03（卒業見込み）</div>
-    <div style="font-size:12px;color:var(--text-muted);margin-top:10px;line-height:1.7;">空間設計・構造力学・デジタルファブリケーションを横断的に学習。スライスアップルスツール：優秀賞選出。カフェ建築設計課題：優秀賞選出。</div>
-  </div>
+  <div id="education-container" class="card" style="margin-bottom:36px;"></div>
 
   <!-- Bottom contact -->
-  <div style="border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:flex-end;">
-    <div>
-      <div style="font-size:24px;font-weight:800;font-family:'Syne',sans-serif;margin-bottom:8px;">KAZUKI TANAKA</div>
-      <div style="font-size:11px;color:var(--text-muted);line-height:1.8;">
-        rtck2018@gmail.com<br>
-        rtck-reina.com<br>
-        reinac.booth.pm
-      </div>
-    </div>
-    <div style="text-align:right;">
-      <div style="font-size:11px;letter-spacing:4px;color:var(--accent);font-family:'Syne',sans-serif;font-weight:700;">RTCK</div>
-      <div style="font-size:10px;color:var(--text-muted);margin-top:4px;">© 2025 RTCK. All Rights Reserved.</div>
-    </div>
-  </div>
-  <div class="page-num">06</div>
+  <div id="footer-contact" style="border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:flex-end;"></div>
+  <div class="page-num"></div>
 </div>
+
+<!-- ==================== TEMPLATES ==================== -->
+
+<!-- Standard work page template -->
+<template id="tpl-work-standard">
+  <div class="page" style="padding:16mm;">
+    <div class="section-label" data-slot="section-label"></div>
+    <h2 class="work-title" data-slot="title"></h2>
+    <div class="work-subtitle" data-slot="subtitle"></div>
+    <div style="height:24px;"></div>
+    <div class="divider"></div>
+
+    <div class="work-image" data-slot="image">
+      <img src="" alt="">
+    </div>
+
+    <p class="work-desc" data-slot="description"></p>
+
+    <div data-slot="metrics" style="margin-bottom:20px;"></div>
+
+    <div class="card" style="margin-bottom:20px;">
+      <div class="card-label">KEY POINTS</div>
+      <div data-slot="keypoints"></div>
+    </div>
+
+    <div class="tech-label">TECH STACK</div>
+    <div data-slot="techstack"></div>
+
+    <div data-slot="link" style="margin-top:16px;font-size:11px;color:var(--accent);display:none;"></div>
+    <div class="page-num"></div>
+  </div>
+</template>
+
+<!-- Product grid work page template -->
+<template id="tpl-work-product-grid">
+  <div class="page" style="padding:16mm;">
+    <div class="section-label" data-slot="section-label"></div>
+    <h2 class="work-title" data-slot="title"></h2>
+    <div class="work-subtitle" data-slot="subtitle"></div>
+    <div style="height:24px;"></div>
+    <div class="divider"></div>
+
+    <div data-slot="product-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px;"></div>
+
+    <div data-slot="extra-cards"></div>
+
+    <div data-slot="iterations"></div>
+
+    <div data-slot="tags" style="margin-top:16px;"></div>
+    <div class="page-num"></div>
+  </div>
+</template>
+
+<noscript>
+  <div style="padding:40px;text-align:center;color:#f5f5f4;font-family:sans-serif;">
+    JavaScript is required. Please enable JavaScript to view this portfolio.
+  </div>
+</noscript>
 
 </body>
 </html>

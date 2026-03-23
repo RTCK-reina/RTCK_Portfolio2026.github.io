@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "lang": "ja",
+    "portfolioYear": "2025",
+    "subtitle": "NAKED Application",
+    "copyright": "© 2025 RTCK. All Rights Reserved."
+  },
+  "profile": {
+    "username": "RTCK",
+    "name": {
+      "display": "KAZUKI TANAKA",
+      "formatted": "KAZUKI<br>TANAKA"
+    },
+    "title": "3DCG・AI Creator",
+    "philosophy": {
+      "headline": "「人の記憶に爪痕を残す」",
+      "body": "すべての制作の目的は、技術的達成ではなく、<br>その場にいた人の記憶に残る体験を作ること。"
+    }
+  },
+  "contacts": [
+    { "label": "portfolio", "value": "rtck-reina.com", "url": "https://rtck-reina.com" },
+    { "label": "github", "value": "github.com/RTCK-reina", "url": "https://github.com/RTCK-reina" },
+    { "label": "booth", "value": "reinac.booth.pm", "url": "https://reinac.booth.pm" },
+    { "label": "email", "value": "rtck2018@gmail.com", "url": "mailto:rtck2018@gmail.com" },
+    { "label": "note", "value": "note.com/rtck_photos", "url": "https://note.com/rtck_photos" }
+  ],
+  "works": [
+    {
+      "type": "standard",
+      "year": "2022",
+      "title": "light ocean RealTimeLight",
+      "subtitle": "VRChat World — Immersive Light Installation",
+      "image": "light_ocean.png",
+      "imageAlt": "light ocean",
+      "description": "水面に無数の発光体が浮遊する没入型ビジュアルパフォーマンス空間。リアルタイムライティングとGPUインスタンシングを組み合わせ、視覚的な豊かさとパフォーマンスを両立。2バージョン合算で1,950名以上が来訪し、お気に入り登録101件を超える。",
+      "metrics": ["1,950+ Visits", "101 Favorites", "2 Versions"],
+      "keyPoints": [
+        "リアルタイムライト内包の発光体を水平線まで無数に配置",
+        "GPUインスタンシングによる描画負荷の最適化",
+        "Vegetation Systemを応用したランダム配置の実装",
+        "シェーダーによる海面の反射・屈折表現"
+      ],
+      "techStack": ["Unity", "ShaderLab/HLSL", "GPU Instancing", "VRChat SDK"],
+      "link": {
+        "text": "→ vrchat.com/home/world/wrld_345e77a0-a9fe-422c-b41a-fd1dbf90d2b0",
+        "url": "https://vrchat.com/home/world/wrld_345e77a0-a9fe-422c-b41a-fd1dbf90d2b0"
+      }
+    },
+    {
+      "type": "standard",
+      "year": "2025",
+      "title": "GLSL Multi Layer VJ",
+      "subtitle": "Real-time Visual Performance Tool",
+      "image": "glsl_vj.png",
+      "imageAlt": "GLSL VJ",
+      "description": "ライブコーディング対応のマルチレイヤーGLSLビジュアルパフォーマンスツール。オーディオリアクティブ機能、MIDIコントローラー対応、Monaco Editor内蔵のシェーダーエディタを搭載。単一HTMLファイルからモジュール構成へ発展。",
+      "metrics": ["10+ Built-in Shaders", "V0→V0.5 Alpha"],
+      "keyPoints": [
+        "マルチレイヤー合成によるリアルタイムビジュアル生成",
+        "Web Audio APIによるオーディオリアクティブ連動",
+        "MIDIコントローラーによるライブパフォーマンス操作",
+        "AI協調開発（Claude）によるラピッドプロトタイピング"
+      ],
+      "techStack": ["WebGL/GLSL", "Web Audio API", "WebMIDI", "Monaco Editor", "JavaScript"]
+    },
+    {
+      "type": "standard",
+      "year": "2025",
+      "title": "SE Interview AI",
+      "subtitle": "AI-Powered Mock Interview Training System",
+      "image": "interview_ai.png",
+      "imageAlt": "Interview AI",
+      "description": "Claude APIを活用した対話型面接トレーニングアプリケーション。音声認識（STT）・音声合成（TTS）・リアルタイムストレス分析を搭載し、複数の面接モード（標準/論理破壊/採用否定型）を実装。Claude-in-Claude アーキテクチャによりArtifact内でAPIコールを実行。",
+      "metrics": ["V4→V8 Iterations", "3 Interview Modes"],
+      "keyPoints": [
+        "Artifact内からClaude APIを直接呼び出すアーキテクチャ設計",
+        "リアルタイムストレスメーター・フィードバックトレーナー",
+        "モデル切替UI（Haiku/Sonnet/Opus対応）",
+        "Free-tier向けLite版の派生開発"
+      ],
+      "techStack": ["Claude API", "React/JSX", "Web Speech API (STT/TTS)", "Claude-in-Claude Architecture"]
+    },
+    {
+      "type": "product-grid",
+      "year": "2020—",
+      "title": "3D Products & Prototyping",
+      "subtitle": "BOOTH Distribution / Generative Design / Reverse Modeling",
+      "products": [
+        {
+          "name": "Basestation 2.0 Mount（-35°）",
+          "image": "V3.jpg",
+          "imageAlt": "Basestation Mount",
+          "description": "ジェネレーティブデザインを用いたVRトラッキング最適化マウント。V0→V4の反復プロトタイピングで剛性・取付性・軽量化を段階的に改善。"
+        },
+        {
+          "name": "コンパクトカメラ（VirtualLens2対応）",
+          "image": "compact_camera.png",
+          "imageAlt": "Compact Camera",
+          "description": "VRChat向け3Dプリント想定アクセサリー。VirtualLens2対応の撮影用プロップ。"
+        },
+        {
+          "name": "トランシーバー",
+          "image": "transceiver.png",
+          "imageAlt": "Transceiver",
+          "description": "VRChat向けアクセサリー。2022年リリース。"
+        }
+      ],
+      "extraCards": [
+        {
+          "label": "REVERSE MODELING — 30+ COMMERCIAL PROJECTS",
+          "text": "Autodesk Fusionを用いたリバースモデリングの有償案件を30件以上受注・納品。ナイフ等プロダクトのモックアップ制作を中心に、実物計測から正確な3Dデータへの再現と、クライアントとの要件調整を繰り返す中で、実務レベルの納品精度と納期管理を習得。"
+        }
+      ],
+      "iterations": {
+        "label": "ITERATIVE PROTOTYPING — BASESTATION MOUNT",
+        "items": [
+          { "image": "V0.jpg", "alt": "V0", "caption": "V0 — 力学的最適解" },
+          { "image": "V1.jpg", "alt": "V1+", "caption": "V1+ — 取付性改善" },
+          { "image": "V2.jpg", "alt": "V2", "caption": "V2 — 高剛性確保" },
+          { "image": "V3.jpg", "alt": "V3", "caption": "V3 — Gen. Design" }
+        ]
+      },
+      "tags": ["BOOTH", "Sketchfab", "note", "Autodesk Fusion", "3D Printing (FDM)", "UltiMaker Cura"],
+      "tagsLabel": "DISTRIBUTION"
+    }
+  ],
+  "skills": [
+    {
+      "category": "MODELING",
+      "items": [
+        { "name": "Autodesk Fusion", "since": "2020.11~" },
+        { "name": "Blender", "since": "2021.05~" }
+      ]
+    },
+    {
+      "category": "DEVELOPMENT",
+      "items": [
+        { "name": "Unity", "since": "2021~" },
+        { "name": "JavaScript / React", "since": "2025~" },
+        { "name": "GLSL / ShaderLab", "since": "2021~" },
+        { "name": "Claude API", "since": "2025~" },
+        { "name": "Python", "since": "2025~" }
+      ]
+    },
+    {
+      "category": "DESIGN",
+      "items": [
+        { "name": "Adobe CC", "since": "2020.04~" },
+        { "name": "Affinity Suite", "since": "2022.05~" }
+      ]
+    },
+    {
+      "category": "OTHER",
+      "items": [
+        { "name": "Git / GitHub", "since": "2025~" },
+        { "name": "3D Printing (FDM)", "since": "2024~" }
+      ]
+    }
+  ],
+  "education": {
+    "institution": "愛知産業大学 造形学部 建築学科",
+    "period": "2023.04 — 2027.03（卒業見込み）",
+    "description": "空間設計・構造力学・デジタルファブリケーションを横断的に学習。スライスアップルスツール：優秀賞選出。カフェ建築設計課題：優秀賞選出。"
+  }
+}
