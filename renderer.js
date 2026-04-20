@@ -12,10 +12,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function render(c) {
-  // Nav bar
-  const nav = document.getElementById('nav-title');
-  if (nav) nav.textContent = `${c.profile.username} PORTFOLIO`.toUpperCase();
-
   // Document title
   document.title = `${c.profile.username} Portfolio`;
   document.documentElement.lang = c.meta.lang || 'en';

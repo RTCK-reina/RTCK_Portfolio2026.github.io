@@ -1,9 +1,16 @@
-# Portfolio Template
+# RTCK Portfolio 2026 / Portfolio Template
 
-A4 印刷対応のポートフォリオテンプレート。`portfolio.config.json` を編集するだけで、誰でも自分のポートフォリオを作成・公開できます。ビルドツールは不要、純粋な HTML / CSS / JS のみで動作します。
+[RTCK (KAZUKI TANAKA)](https://rtck-reina.com) のポートフォリオサイトであり、同時に誰でも自分のポートフォリオとして再利用できる A4 印刷対応テンプレートでもあります。
+
+- 本リポジトリの `portfolio.config.json` / 作品画像は **RTCK 本人の作品データ**です
+- `index.html` / `renderer.js` はデータ駆動のテンプレートとして汎用化されています
+- Fork して `portfolio.config.json` を書き換えれば、自分のポートフォリオとして公開できます
+
+## 特徴
 
 - データ駆動（HTML は触らない）
 - A4 サイズで画面表示 & PDF エクスポート対応
+- ビルドツール不要の純粋な HTML / CSS / JS
 - GitHub Pages / Netlify / Vercel などにそのままデプロイ可能
 
 ---
@@ -32,7 +39,7 @@ npx serve .
 
 ### PDF エクスポート
 
-ページ上部の **PRINT / PDF** ボタン、または `Ctrl/Cmd + P` で A4 サイズの PDF を書き出せます。ブラウザの印刷ダイアログで「背景のグラフィック」を有効にしてください。
+`Ctrl/Cmd + P` で A4 サイズの PDF を書き出せます。ブラウザの印刷ダイアログで「背景のグラフィック」を有効にしてください。
 
 ---
 
