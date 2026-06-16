@@ -120,7 +120,7 @@
           { "image": "V3.jpg", "alt": "V3", "caption": "V3 — Gen. Design" }
         ]
       },
-      "tags": ["BOOTH", "Sketchfab", "note", "Autodesk Fusion", "3D Printing (FDM)", "UltiMaker Cura"],
+      "tags": ["BOOTH", "Sketchfab", "Autodesk Fusion", "3D Printing (FDM)", "UltiMaker Cura"],
       "tagsLabel": "DISTRIBUTION"
     }
   ],
